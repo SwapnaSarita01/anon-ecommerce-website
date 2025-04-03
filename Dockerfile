@@ -1,4 +1,7 @@
-FROM nginx:latest
-COPY . /usr/share/nginx/html
-EXPOSE 80
-EOF
+FROM nginx:latest  
+
+# Copy application files
+COPY . /usr/share/nginx/html  
+
+# Expose the required port
+EXPOSE 80 
